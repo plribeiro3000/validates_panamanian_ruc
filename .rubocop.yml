@@ -1,13 +1,19 @@
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 2.6
 
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+require:
+  - rubocop-rake
+  - rubocop-rspec
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+Metrics/BlockLength:
+  Enabled: false
 
-Layout/LineLength:
-  Max: 120
+Metrics/LineLength:
+  Max: 150
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/Documentation:
+  Enabled: false

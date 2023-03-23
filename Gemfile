@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 # Specify your gem's dependencies in validates_panamanian_ruc.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
-
-gem "rspec", "~> 3.0"
-
-gem "rubocop", "~> 1.21"
+gem 'jazz_fingers'
+gem 'rake'
+gem 'rspec'
+gem 'rubocop'
+gem 'rubocop-rake'
+gem 'rubocop-rspec'
+gem 'shoulda-matchers'
