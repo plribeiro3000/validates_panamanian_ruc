@@ -1,4 +1,4 @@
-# ValidatesPanamanianRuc
+# ValidatesPanamanianTaxpayerRegistry
 
 This projects aims to validate Panamanian Taxpayer Registry (Registro Unico de Contribuyentes).
 
@@ -7,7 +7,7 @@ This projects aims to validate Panamanian Taxpayer Registry (Registro Unico de C
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'validates_panamanian_ruc'
+gem 'validates_panamanian_taxpayer_registry'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install validates_panamanian_ruc
+    $ gem install validates_panamanian_taxpayer_registry
 
 ## Usage
 
@@ -24,7 +24,7 @@ Just use as any other validator:
 
 ```ruby
 class User < ActiveRecord::Base
-  validates :identity, panamanian_ruc: true
+  validates :identity, panamanian_taxpayer_registry: true
 end
 ```
 
@@ -33,14 +33,14 @@ end
 Require the matcher:
 
 ```ruby
-require 'validates_panamanian_ruc/require_a_valid_panamanian_ruc_matcher'
+require 'validates_panamanian_taxpayer_registry/require_a_valid_panamanian_taxpayer_registry_matcher'
 ```
 
 Use in your tests:
 
 ```ruby
-it { is_expected.to require_a_valid_panamanian_ruc } # It will test the attribute :ruc by default
-it { is_expected.to require_a_valid_panamanian_ruc(:id) } # It will test the attribute :id
+it { is_expected.to require_a_valid_panamanian_taxpayer_registry } # It will test the attribute :taxpayer_registry by default
+it { is_expected.to require_a_valid_panamanian_taxpayer_registry(:id) } # It will test the attribute :id
 ```
 
 ## Development
@@ -51,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/plribeiro3000/validates_panamanian_ruc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/plribeiro3000/validates_panamanian_ruc/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/plribeiro3000/validates_panamanian_taxpayer_registry. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/plribeiro3000/validates_panamanian_taxpayer_registry/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -59,4 +59,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the ValidatesPanamanianRuc project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/plribeiro3000/validates_panamanian_ruc/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ValidatesPanamanianTaxpayerRegistry project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/plribeiro3000/validates_panamanian_taxpayer_registry/blob/master/CODE_OF_CONDUCT.md).

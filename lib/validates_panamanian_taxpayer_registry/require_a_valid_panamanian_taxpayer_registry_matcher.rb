@@ -5,11 +5,11 @@ require 'shoulda-matchers'
 module Shoulda
   module Matchers
     module ActiveModel
-      def require_a_valid_panamanian_ruc(attr = :ruc)
-        RequireAValidPanamanianRucMatcher.new(attr)
+      def require_a_valid_panamanian_taxpayer_registry(attr = :taxpayer_registry)
+        RequireAValidPanamanianTaxpayerRegistryMatcher.new(attr)
       end
 
-      class RequireAValidPanamanianRucMatcher < ValidationMatcher
+      class RequireAValidPanamanianTaxpayerRegistryMatcher < ValidationMatcher
         def description
           'requires a valid Panamanian Ruc'
         end

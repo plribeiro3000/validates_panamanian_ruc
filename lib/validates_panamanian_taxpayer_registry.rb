@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+require 'active_model'
+require 'validates_panamanian_taxpayer_registry/panamanian_taxpayer_registry_validator'
+require 'validates_panamanian_taxpayer_registry/require_a_valid_panamanian_taxpayer_registry_matcher' if defined?(Shoulda)
+
+module ValidatesPanamanianTaxpayerRegistry
+  autoload :PanamanianTaxpayerRegistry, 'validates_panamanian_taxpayer_registry/panamanian_taxpayer_registry'
+end

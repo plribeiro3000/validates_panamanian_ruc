@@ -20,5 +20,5 @@ JazzFingers.configure do |config|
   config.coolline = false
 end
 
-require File.expand_path('lib/validates_panamanian_ruc')
+require File.expand_path('lib/validates_panamanian_taxpayer_registry')
 require File.expand_path('spec/fake_app/user')

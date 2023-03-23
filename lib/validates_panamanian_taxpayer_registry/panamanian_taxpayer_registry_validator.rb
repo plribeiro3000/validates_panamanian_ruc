@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-class PanamanianRucValidator < ActiveModel::EachValidator
+class PanamanianTaxpayerRegistryValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
-    rfc = ValidatesPanamanianRuc::PanamanianRuc.new(value)
+    rfc = ValidatesPanamanianTaxpayerRegistry::PanamanianTaxpayerRegistry.new(value)
 
     return if rfc.valid?
 

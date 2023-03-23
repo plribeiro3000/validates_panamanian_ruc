@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module ValidatesPanamanianRuc
-  class PanamanianRuc
+module ValidatesPanamanianTaxpayerRegistry
+  class PanamanianTaxpayerRegistry
     REGEX = /\A([0-9]{8,9})-([A-Z0-9]{1})-(19[5-9]\d|20[0-4]\d|2050)\z/i.freeze
 
     def initialize(value)

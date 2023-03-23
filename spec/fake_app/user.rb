@@ -3,8 +3,8 @@
 class User
   include ActiveModel::Model
 
-  attr_accessor :id, :name, :ruc
+  attr_accessor :id, :name, :taxpayer_registry
 
-  validates :ruc, panamanian_ruc: true
-  validates :id, panamanian_ruc: true
+  validates :taxpayer_registry, panamanian_taxpayer_registry: true
+  validates :id, panamanian_taxpayer_registry: true
 end

@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in validates_panamanian_ruc.gemspec
+# Specify your gem's dependencies in validates_panamanian_taxpayer_registry.gemspec
 gemspec
 
 gem 'jazz_fingers'
