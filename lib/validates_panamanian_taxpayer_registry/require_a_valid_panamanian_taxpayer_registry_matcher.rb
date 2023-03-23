@@ -11,11 +11,11 @@ module Shoulda
 
       class RequireAValidPanamanianTaxpayerRegistryMatcher < ValidationMatcher
         def description
-          'requires a valid Panamanian Ruc'
+          'requires a valid Panamanian Taxpayer Registry'
         end
 
         def failure_message
-          'does not require a valid Panamanian Ruc'
+          'does not require a valid Panamanian Taxpayer Registry'
         end
 
         def matches?(subject)
