@@ -1,8 +1,6 @@
 # ValidatesPanamanianRuc
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/validates_panamanian_ruc`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This projects aims to validate Panamanian Taxpayer Registry (Registro Unico de Contribuyentes).
 
 ## Installation
 
@@ -22,7 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just use as any other validator:
+
+```ruby
+class User < ActiveRecord::Base
+  validates :identity, panamanian_ruc: true
+end
+```
+
+## Testing
+
+Require the matcher:
+
+```ruby
+require 'validates_panamanian_ruc/require_a_valid_panamanian_ruc_matcher'
+```
+
+Use in your tests:
+
+```ruby
+it { is_expected.to require_a_valid_panamanian_ruc } # It will test the attribute :ruc by default
+it { is_expected.to require_a_valid_panamanian_ruc(:id) } # It will test the attribute :id
+```
 
 ## Development
 
@@ -32,7 +51,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/validates_panamanian_ruc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/validates_panamanian_ruc/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/plribeiro3000/validates_panamanian_ruc. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/plribeiro3000/validates_panamanian_ruc/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -40,4 +59,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the ValidatesPanamanianRuc project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/validates_panamanian_ruc/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ValidatesPanamanianRuc project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/plribeiro3000/validates_panamanian_ruc/blob/master/CODE_OF_CONDUCT.md).
