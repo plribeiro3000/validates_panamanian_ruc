@@ -1,6 +1,6 @@
 # ValidatesPanamanianTaxpayerRegistry
 
-This projects aims to validate Panamanian Taxpayer Registry - RUC (Registro Unico de Contribuyentes).
+This projects aims to validate Panamanian Taxpayer Registry of 3rd and 4th generation for Legal Entities - RUC (Registro Unico de Contribuyentes).
 
 The validations are following the documentation found online [here](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Panama-TIN.pdf) and inside the project [here](https://github.com/plribeiro3000/validates_panamanian_taxpayer_registry/blob/master/docs/Panama-TIN.pdf)
 

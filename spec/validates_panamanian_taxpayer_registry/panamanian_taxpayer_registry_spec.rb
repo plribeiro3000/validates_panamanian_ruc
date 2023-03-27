@@ -3,24 +3,24 @@
 require 'spec_helper'
 
 RSpec.describe ValidatesPanamanianTaxpayerRegistry::PanamanianTaxpayerRegistry do
-  it 'accepts 10121212-1-1983' do
-    expect(described_class.new('10121212-1-1983')).to be_valid
+  it 'accepts 10121212-1-2000' do
+    expect(described_class.new('10121212-1-2000')).to be_valid
   end
 
-  it 'accepts 101111111-A-1950' do
-    expect(described_class.new('101111111-A-1950')).to be_valid
+  it 'accepts 123456789-2-2045' do
+    expect(described_class.new('123456789-2-2045')).to be_valid
   end
 
-  it 'accepts 123456789-D-2045' do
-    expect(described_class.new('123456789-D-2045')).to be_valid
+  it 'accepts 101111111-1-1999 (third generation of RUC for entities)' do
+    expect(described_class.new('101111111-1-1999')).to be_valid
   end
 
-  it 'accepts 999999999-2-2000' do
-    expect(described_class.new('999999999-2-2000')).to be_valid
+  it 'accepts 999999999-2-2015 (fourth generation of RUC for commercial entities)' do
+    expect(described_class.new('999999999-2-2015')).to be_valid
   end
 
-  it 'accepts 23121212-L-2005' do
-    expect(described_class.new('23121212-L-2005')).to be_valid
+  it 'accepts 23121212-3-2019 (fourth generation of RUC for non-commercial entities)' do
+    expect(described_class.new('23121212-3-2019')).to be_valid
   end
 
   it 'rejects 10-01-23-123' do

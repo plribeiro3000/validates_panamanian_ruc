@@ -21,9 +21,9 @@ module Shoulda
         def matches?(subject)
           super(subject)
 
-          allows_value_of('123456789-2-1983') &&
-            allows_value_of('10101010-1-2005') &&
-            allows_value_of('123121234-L-2040') &&
+          allows_value_of('123456789-2-2015') &&
+            allows_value_of('10101010-1-2001') &&
+            allows_value_of('12312123-3-2040') &&
             disallows_value_of('90-234-1-23') &&
             disallows_value_of('10-0-123-123')
         end
